@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>京东首页</title>
+    <link href="main.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="jquery.js"></script><!--引在js的上面-->
+    <script type="text/javascript" src="js.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div id="top">
+                <!--地址选择-->
+                <div id="add">
+                    <div>送至：<span id="adds">北京</span></div>
+                    <ul id="add1">
+                        <li>北京</li><li>上海</li><li>天津</li><li>重庆</li><li>河北</li>
+                        <li>山西</li><li>河南</li><li>辽宁</li><li>吉林</li><li>黑龙江</li>
+                        <li>内蒙古</li><li>江苏</li><li>山东</li><li>安徽</li><li>浙江</li>
+                        <li>福建</li><li>湖北</li><li>湖南</li><li>广东</li><li>广西</li>
+                        <li>江西</li><li>四川</li><li>海南</li><li>贵州</li><li>云南</li>
+                        <li>西藏</li><li>陕西</li><li>甘肃</li><li>青海</li><li>宁夏</li>
+                        <li>新疆</li><li>台湾</li><li>香港</li><li>澳门</li><li>钓鱼岛</li>
+                        <li>海外</li>
+                    </ul>
+                </div>
+
+                <!--子导航-->
+                <ul id="fr">
+                    <li>你好，请登录<a href="注册.html"><span class="sp1">免费注册</span></a></li>
+                    <li>我的订单</li>
+                    <li><span class="sp2">我的京东</span></li>
+                    <li>京东会员</li>
+                    <li>企业采购</li>
+                    <li><span class="sp2">手机京东</span></li>
+                    <li><span class="sp2">关注京东</span></li>
+                    <li><span class="sp2">客服服务</span></li>
+                    <li><span class="sp2">网站导航</span></li>
+                </ul>
+            </div>
+
+            <!--搜索-->
+            <div id="link">
+                <input type="text" id="text" placeholder="拉杆箱">
+                <div id="sec"><a href="分类页.html" style="color:#fff;">搜索</a></div>
+            </div>
+
+            <!--商品分类-->
+            <ul id="left">
+                <li onmouseover="t1(0)" onmouseout="t2(0)">京东电器</li>
+                <div  onmouseover="t1(0)" onmouseout="t2(0)"><img src="img/div1.gif" alt=""></div>
+                <li onmouseover="t1(1)" onmouseout="t2(1)">手机、数码、京东通信</li>
+                <div  onmouseover="t1(1)" onmouseout="t2(1)"><img src="img/box2.gif" alt=""></div>
+                <li onmouseover="t1(2)" onmouseout="t2(2)">京东电器</li>
+                <div  onmouseover="t1(2)" onmouseout="t2(2)"><img src="img/box3.gif" alt=""></div>
+                <li onmouseover="t1(3)" onmouseout="t2(3)">手机、数码、京东通信</li>
+                <div  onmouseover="t1(3)" onmouseout="t2(3)"><img src="img/div1.gif" alt=""></div>
+                <li>京东电器</li>
+                <li>京东电器</li>
+                <li>鞋靴、箱包、珠宝、奢侈品</li>
+                <li>运动户外、钟表</li>
+                <li>汽车、汽车用品</li>
+                <li>母婴、玩具乐器</li>
+                <li>食品、酒类、生鲜、特产</li>
+                <li>医药保健</li>
+                <li>图书、音像、电子书</li>
+                <li>彩票、旅行、充值、票务</li>
+                <li>理财、众筹、白条、保险</li>
+            </ul>
+
+            <!--轮播-->
+            <div id="middle">
+                <ul id="list2">
+                    <li onclick="img2(0)">1</li>
+                    <li onclick="img2(1)">2</li>
+                    <li onclick="img2(2)">3</li>
+                    <li onclick="img2(3)">4</li>
+                    <li onclick="img2(4)">5</li>
+                    <li onclick="img2(5)">6</li>
+                </ul>
+                <div><a href="javascript:void[0]" class="btn1" onclick="rightbtn()">></a></div>
+                <div><a href="javascript:void[0]" class="btn" onclick="leftbtn()"><</a></div>
+                <img src="img/1.jpg" alt="" id="img1">
+            </div>
+
+            <!--选项卡-->
+            <div id="right">
+                <img src="img/box1.gif" alt="">
+                <!--选项卡-->
+                <ul id="list4">
+                    <li onmouseover="choice1(0)">话费</li>
+                    <li onmouseover="choice1(1)">机票</li>
+                    <li onmouseover="choice1(2)">电影票</li>
+                    <li onmouseover="choice1(3)" class="bg3">游戏</li>
+                </ul>
+                <div id="box1">
+                    <div><img src="img/list4_1.gif" alt=""></div>
+                    <div style="display:none;"><img src="img/list4_2.gif" alt=""></div>
+                    <div style="display:none;"><img src="img/list4_3.gif" alt=""></div>
+                    <div style="display:none;"><img src="img/list4_4.gif" alt=""></div>
+                </div>
+                <img src="img/right.gif" alt="">
+            </div>
+        </header>
+
+        <div id="contents">
+            <!--今日推荐-->
+            <div id="main1">
+                <img src="img/main1.gif" alt="">
+                <div><a href="javascript:void[0]" id="btn4">></a></div>
+                <div><a href="javascript:void[0]" id="btn3"><</a></div>
+                <div id="box3">
+                    <div id="box4">
+                        <img src="img/main1_1.gif" alt="">
+                        <img src="img/main1_2.gif" alt="">
+                        <img src="img/main1_3.gif" alt="">
+                        <img src="img/main1_4.gif" alt="">
+                        <img src="img/main1_5.gif" alt="">
+                        <img src="img/main1_6.gif" alt="">
+                        <img src="img/main1_7.gif" alt="">
+                        <img src="img/main1_4.gif" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!--618会场-->
+            <div id="meeting">
+                <div id="m_tit"><img src="img/618.gif"></div>
+                <ul id="m_list">
+                    <li><img src="img/m_list1.gif"></li>
+                    <li><img src="img/m_list2.gif"></li>
+                    <li><img src="img/m_list3.gif"></li>
+                    <li><img src="img/m_list4.gif"></li>
+                    <li class="w234"><img src="img/m_list5.gif"></li>
+                </ul>
+            </div>
+
+            <!--猜你喜欢-->
+            <div id="main2">
+                <div id="m2_tit">
+                    <div id="t1"><img src="img/img3.gif" alt=""></div>
+                    <div id="t2" onclick="t3()">换一批</div>
+                </div>
+                <div id="box2">
+                    <img src="img/img4.gif" alt="">
+                    <img src="img/img5.gif" alt="">
+                    <img src="img/m2.gif" alt="">
+                    <img src="img/m22.gif" alt="">
+                    <img src="img/m23.gif" alt="">
+                    <img src="img/m24.gif" alt="">
+                </div>
+            </div>
+
+            <div class="life"><img src="img/life.gif" alt=""></div>
+
+            <!--楼层-->
+            <div id="step">
+                <li>1楼</li>
+                <li>2楼</li>
+                <li class="bg">3楼</li>
+            </div>
+
+            <div id="fcont">
+                <!--1F-->
+                <div class="floor">
+                    <div class="ftit">
+                        <div class="f_tit1"><img src="img/f11.gif"></div>
+                        <ul class="f_tit2">
+                            <li onmouseover="floor(0,1)"><span>大牌</span></li>
+                            <li onmouseover="floor(1,1)"><span>男装</span></li>
+                            <li onmouseover="floor(2,1)"><span>女装</span></li>
+                            <li onmouseover="floor(3,1)"><span>鞋靴</span></li>
+                            <li onmouseover="floor(4,1)"><span>箱包</span></li>
+                            <li onmouseover="floor(5,1)"><span>内衣配饰</span></li>
+                            <li onmouseover="floor(6,1)"><span>珠宝首饰</span></li>
+                            <li onmouseover="floor(7,1)"><span>奢品礼品</span></li>
+                            <li onmouseover="floor(8,1)"><span>奢华腕表</span></li>
+                        </ul>
+                    </div>
+                    <div class="fmain">
+                        <div class="f_left"><img src="img/img6.gif" alt="" ></div>
+                        <div class="f_right" id="f1">
+                            <img src="img/floor1.gif" alt="" style="display:block;">
+                            <img src="img/img20.gif" alt="">
+                            <img src="img/img19.gif" alt="">
+                            <img src="img/img19.gif" alt="">
+                            <img src="img/img20.gif" alt="">
+                            <img src="img/img19.gif" alt="">
+                            <img src="img/img20.gif" alt="">
+                            <img src="img/img19.gif" alt="">
+                            <img src="img/img19.gif" alt="">
+                        </div>
+                    </div>
+                    <img src="img/img11.gif" alt="">
+                </div>
+
+                <!--2F-->
+                <div class="floor">
+                    <div class="ftit">
+                        <div class="f_tit1"><img src="img/f22.gif"></div>
+                        <ul class="f_tit2">
+                            <li onmouseover="floor(0,2)"><span>热门</span></li>
+                            <li onmouseover="floor(1,2)"><span>国际大牌</span></li>
+                            <li onmouseover="floor(2,2)"><span>国妆名品</span></li>
+                            <li onmouseover="floor(3,2)"><span>个人护理</span></li>
+                            <li onmouseover="floor(4,2)"><span>清洁用品</span></li>
+                            <li onmouseover="floor(5,2)"><span>纸品湿巾</span></li>
+                            <li onmouseover="floor(6,2)"><span>香水彩妆</span></li>
+                            <li onmouseover="floor(7,2)"><span>男士精品</span></li>
+                        </ul>
+                    </div>
+                    <div class="fmain">
+                        <div class="f_left"><img src="img/img12.gif" alt="" ></div>
+                        <div id="f2" class="f_right">
+                            <img src="img/2_9.gif" alt="" style="display:block;">
+                            <img src="img/2_2.gif" alt="">
+                            <img src="img/2_3.gif" alt="">
+                            <img src="img/2_4.gif" alt="">
+                            <img src="img/2_5.gif" alt="">
+                            <img src="img/2_6.gif" alt="">
+                            <img src="img/2_7.gif" alt="">
+                            <img src="img/2_8.gif" alt="">
+                            <img src="img/2_9.gif" alt="">
+                        </div>
+                    </div>
+                    <img src="img/img15.gif" alt="" />
+                </div>
+
+                <!--3F-->
+                <div class="floor">
+                    <div class="ftit">
+                        <div class="f_tit1"><img src="img/f33.gif"></div>
+                        <ul class="f_tit2">
+                            <li onmouseover="floor(0,3)"><span>热门</span></li>
+                            <li onmouseover="floor(1,3)"><span>新品</span></li>
+                            <li onmouseover="floor(2,3)"><span>性价比</span></li>
+                            <li onmouseover="floor(3,3)"><span>运营商</span></li>
+                            <li onmouseover="floor(4,3)"><span>手机配件</span></li>
+                            <li onmouseover="floor(5,3)"><span>JDphone</span></li>
+                            <li onmouseover="floor(6,3)"><span>京东170</span></li>
+                            <li onmouseover="floor(7,3)"><span>汽车用品</span></li>
+                        </ul>
+                    </div>
+                    <div class="fmain">
+                        <div class="f_left"><img src="img/f3 1.gif" alt="" ></div>
+                        <div id="f3" class="f_right">
+                            <img src="img/3_1.gif" alt="" style="display:block;">
+                            <img src="img/3_2.gif" alt="">
+                            <img src="img/3_3.gif" alt="">
+                            <img src="img/3_4.gif" alt="">
+                            <img src="img/3_5.gif" alt="">
+                            <img src="img/3_6.gif" alt="">
+                            <img src="img/3_7.gif" alt="">
+                            <img src="img/3_8.gif" alt="">
+                            <img src="img/3_9.gif" alt="">
+                        </div>
+                    </div>
+                    <img src="img/f3 5.gif" alt="">
+                </div>
+            </div>
+
+            <!--天天低价-->
+            <div class="lowp">
+                <div class="lp_tit"><img src="img/lp_tit.gif" alt=""></div>
+                <div class="lp_main">
+                    <dl class="list1">
+                        <dt><img src="img/lp1.gif" alt=""></dt>
+                        <dd>
+                            <p>米其林 (MACHINE) 4387ML车载</p>
+                            <p class="pr">199.00</p>
+                        </dd>
+                    </dl>
+
+                    <ul class="list2">
+                        <li>
+                            <dl class="list3">
+                                <dt><img src="img/list3_1.gif" alt=""></dt>
+                                <dd>
+                                    <p>朗科</p>
+                                    <p class="pr">￥29.90</p>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl class="list3">
+                                <dt><img src="img/list3_2.gif" alt="" onmo /></dt>
+                                <dd>
+                                    <p>暴风魔镜 小D虚拟现实VR智能眼</p>
+                                    <p class="pr">￥179.00</p>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl class="list3">
+                                <dt><img src="img/list3_3.gif" alt=""></dt>
+                                <dd>
+                                    <p>帅康 （Sacon）6.5升节能速</p>
+                                    <p class="pr">￥399.00</p>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl class="list3">
+                                <dt><img src="img/list3_4.gif" alt=""></dt>
+                                <dd>
+                                    <p>IIKTWOK男士手表时尚夜光男表</p>
+                                    <p class="pr">￥61.80</p>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl class="list3">
+                                <dt><img src="img/list3_5.gif" alt=""></dt>
+                                <dd>
+                                    <p>捷渡(JADO)JD670S双镜头高清</p>
+                                    <p class="pr">￥458.00</p>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl class="list3">
+                                <dt><img src="img/list3_6.gif" alt=""></dt>
+                                <dd>
+                                    <p>全微（transwin）A-920 2.0声 </p>
+                                    <p class="pr">￥29.00</p>
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+
+                    <!--滚动留言-->
+                    <div class="lp_right">
+                        <div id="box5">
+                            <img src="img/lp m1.gif" alt="">
+                            <img src="img/lp m2.gif" alt="">
+                            <img src="img/lp m3.gif" alt="">
+                            <img src="img/lp m4.gif" alt="">
+                            <img src="img/lp m5.gif" alt="">
+                            <img src="img/lp m6.gif" alt="">
+                            <img src="img/lp m7.gif" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--底部-->
+        <div id="footer"><img src="img/footer.gif" alt=""></div>
+    </div>
+</body>
+</html>

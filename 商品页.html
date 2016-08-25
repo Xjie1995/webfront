@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>商品页</title>
+    <link href="main.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="jquery.js"></script><!--引在js的上面-->
+    <script type="text/javascript" src="js.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div id="top">
+                <!--地址选择-->
+                <div id="add">
+                    <div>送至：<span id="adds">北京</span></div>
+                    <ul id="add1">
+                        <li>北京</li><li>上海</li><li>天津</li><li>重庆</li><li>河北</li>
+                        <li>山西</li><li>河南</li><li>辽宁</li><li>吉林</li><li>黑龙江</li>
+                        <li>内蒙古</li><li>江苏</li><li>山东</li><li>安徽</li><li>浙江</li>
+                        <li>福建</li><li>湖北</li><li>湖南</li><li>广东</li><li>广西</li>
+                        <li>江西</li><li>四川</li><li>海南</li><li>贵州</li><li>云南</li>
+                        <li>西藏</li><li>陕西</li><li>甘肃</li><li>青海</li><li>宁夏</li>
+                        <li>新疆</li><li>台湾</li><li>香港</li><li>澳门</li><li>钓鱼岛</li>
+                        <li>海外</li>
+                    </ul>
+                </div>
+
+                <!--子导航-->
+                <ul id="fr">
+                    <li>你好，请登录<span class="sp1">免费注册</span></li>
+                    <li>我的订单</li>
+                    <li><span class="sp2">我的京东</span></li>
+                    <li>京东会员</li>
+                    <li>企业采购</li>
+                    <li><span class="sp2">手机京东</span></li>
+                    <li><span class="sp2">关注京东</span></li>
+                    <li><span class="sp2">客服服务</span></li>
+                    <li><span class="sp2">网站导航</span></li>
+                </ul>
+            </div>
+
+
+                <div class="bg11">
+                <img src="img3/qi.gif" alt="">
+            </div>
+
+            <div id="goods">
+                <div id="g_left">
+                        <div id="g1">
+                            <img src="img3/img.gif" alt="" id="gs" onmousemove="f1(this,event)" onmouseout="f2()">
+                        </div>
+                            <!--放大镜-->
+                        <div id="glass1">
+                            <div id="glass">
+                                <img id="big">
+                            </div>
+                        </div>
+                    <div><a href="javascript:void[0]" id="gbtn">></a></div>
+                    <div><a href="javascript:void[0]" id="gbtn1"><</a></div>
+                    <div id="g2">
+                        <div id="g3">
+                            <img src="img3/img.gif" onmouseover="g(0)" alt="">
+                            <img src="img3/2.gif" onmouseover="g(1)" alt="">
+                            <img src="img3/3.gif" onmouseover="g(2)" alt="">
+                            <img src="img3/5.gif" onmouseover="g(3)" alt="">
+                            <img src="img3/6.gif" onmouseover="g(4)" alt="">
+                            <img src="img3/img.gif" onmouseover="g(5)" alt="">
+                            <img src="img3/2.gif" onmouseover="g(6)" alt="">
+                        </div>
+                    </div>
+                    <div id="g4"><img src="img3/bianhao.gif" alt=""></div>
+                </div>
+
+                <div id="g_right">
+                    <img src="img3/tit.gif" alt="">
+                    <div id="g_add" class="wh">
+                        <div class="gtit">配送至</div>
+                        <div class="gimg"><img src="img3/address.gif" alt=""></div>
+                    </div>
+                    <div id="color" class="wh">
+                        <div class="gtit lh70">选择颜色</div>
+                        <ul id="c_list">
+                            <li onclick="color1(this)"><img src="img3/c1.gif" alt=""></li>
+                            <li onclick="color1(this)"><img src="img3/7.gif" alt=""></li>
+                        </ul>
+                    </div>
+                    <div id="size" class="wh">
+                        <div class="gtit lh34">选择尺码</div>
+                        <ul class="s_list">
+                            <li onclick="size1(this)">S</li>
+                            <li onclick="size1(this)">M</li>
+                            <li onclick="size1(this)">XL</li>
+                            <li onclick="size1(this)">XS</li>
+                        </ul>
+                    </div>
+                    <div id="number">
+                        <div id="n1">
+                            <div id="n_left">1</div>
+                            <div id="n_right">
+                                <input type="button" class="nbtn">
+                                <input type="button" class="nbtn1">
+                            </div>
+                        </div>
+                        <input type="button" id="car" value="加入购物车">
+                        <p id="tips">提示：!您最多可以购买十件</p>
+                        <p>温馨提示 .支持7天无理由退货</p>
+                    </div>
+                </div>
+
+                <div id="g_right2"><img src="img3/right2.gif" alt=""></div><!--划过时显示半透明和字-->
+            </div>
+        </header>
+
+        <div id="cont1">
+            <!--店长推荐-->
+            <div id="taocan">
+                <img src="img3/shop.gif" alt="">
+                <ul id="shop">
+                    <li>
+                        <img src="img3/p1.gif">
+                        <div class="p_name">[520新品]七格格春装新款字母印花微喇短袖短</div>
+                        <p class="p_price">￥79.90</p>
+                    </li>
+                    <li>
+                        <img src="img3/p2.gif">
+                        <div class="p_name">[520新品]七格格春装新款字母印花微喇短袖短</div>
+                        <p class="p_price">￥69.90</p>
+                    </li>
+                    <li>
+                        <img src="img3/p3.gif">
+                        <div class="p_name">[520新品]七格格春装新款字母印花微喇短袖短</div>
+                        <p class="p_price">199.90</p>
+                    </li>
+                    <li>
+                        <img src="img3/p4.gif">
+                        <div class="p_name">[520新品]七格格春装新款字母印花微喇短袖短</div>
+                        <p class="p_price">￥109.90</p>
+                    </li>
+                </ul>
+            </div>
+            <div id="c_left"><img src="img3/cleft.gif" alt=""></div>
+            <div id="c_right">
+                <ul id="c_tit">
+                    <li onclick="c2(0)" class="bg7">商品介绍</li>
+                    <li onclick="c2(1)">售后保障</li>
+                    <li onclick="c2(2)">商品评价（<span id="n2">66</span>）</li>
+                </ul>
+                <!--商品评价-->
+                <div id="pingjia">
+                    <img src="img3/pingjia.gif" alt="">
+                    <div id="box7">
+                        <div id="d" class="dd">
+                            <div class="column">
+                                <div class="star"><img src="img3/star2.gif"></div>
+                                <div class="time"></div>
+                            </div>
+                            <div class="text1"></div>
+                            <div class="name1"></div>
+                        </div>
+                    </div>
+
+                    <div id="cont2">
+                        <dl>
+                            <dt>会员名</dt>
+                            <dd><input type="text" id="name"></dd>
+                        </dl>
+                        <dl>
+                            <dt>评价</dt>
+                            <dd><textarea rows="5" cols="4" id="ta"></textarea></dd>
+                        </dl>
+                        <dl>
+                            <dt></dt>
+                            <dd id="column1">
+                                <span class="ml65">好评</span><img src="img3/star.gif">
+                                <span>中评</span><img src="img3/star2.gif">
+                                <span>一般</span><img src="img3/star3.gif">
+                                <span>差评</span><img src="img3/star4.gif">
+                            </dd>
+                        </dl>
+                        <div id="btn5">
+                            <input type="button" value="留言" id="btn6" class="bt" onclick="append1()">
+                            <input type="button" value="清除" id="btn7" class="bt">
+                        </div>
+                </div>
+                </div>
+                <!--商品详情-->
+                <div id="xiangqing">
+                    <img src="img3/xiangqing.gif" alt="">
+                </div>
+                <div id="baozhang">
+                    <img src="img3/baozhang.gif" alt="">
+                    <img src="img3/haoping.gif" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!--底部-->
+        <div id="footer"><img src="img/footer.gif" alt=""></div>
+    </div>
+</body>
+</html>

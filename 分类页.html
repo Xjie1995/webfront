@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>分类页</title>
+    <link href="main.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="jquery.js"></script><!--引在js的上面-->
+    <script type="text/javascript" src="js.js"></script>
+</head>
+<body>
+<div id="wrap">
+    <header>
+        <div id="top">
+            <!--地址选择-->
+            <div id="add">
+                <div>送至：<span id="adds">北京</span></div>
+                <ul id="add1">
+                    <li>北京</li><li>上海</li><li>天津</li><li>重庆</li><li>河北</li>
+                    <li>山西</li><li>河南</li><li>辽宁</li><li>吉林</li><li>黑龙江</li>
+                    <li>内蒙古</li><li>江苏</li><li>山东</li><li>安徽</li><li>浙江</li>
+                    <li>福建</li><li>湖北</li><li>湖南</li><li>广东</li><li>广西</li>
+                    <li>江西</li><li>四川</li><li>海南</li><li>贵州</li><li>云南</li>
+                    <li>西藏</li><li>陕西</li><li>甘肃</li><li>青海</li><li>宁夏</li>
+                    <li>新疆</li><li>台湾</li><li>香港</li><li>澳门</li><li>钓鱼岛</li>
+                    <li>海外</li>
+                </ul>
+            </div>
+
+            <!--子导航-->
+            <ul id="fr">
+                <li>你好，请登录<span class="sp1">免费注册</span></li>
+                <li>我的订单</li>
+                <li><span class="sp2">我的京东</span></li>
+                <li>京东会员</li>
+                <li>企业采购</li>
+                <li><span class="sp2">手机京东</span></li>
+                <li><span class="sp2">关注京东</span></li>
+                <li><span class="sp2">客服服务</span></li>
+                <li><span class="sp2">网站导航</span></li>
+            </ul>
+        </div>
+
+
+        <!--搜索-->
+        <div id="link">
+            <input type="text" id="text" placeholder="拉杆箱">
+            <div id="sec">搜索</div>
+        </div>
+
+        <div class="shop1"><img src="img3/shop.gif" alt=""></div>
+
+        <div id="main4">
+            <div id="sec2"><img src="img3/sec2.gif"></div>
+
+            <div id="condition">
+                <div class="c_list">
+                    <dt>价格</dt>
+                    <dd>
+                        <ul class="d_list" id="dlist1">
+                            <li onclick="cond(0,1)">0-59</li>
+                            <li onclick="cond(1,1)">60-199</li>
+                            <li onclick="cond(2,1)">200-299</li>
+                            <li onclick="cond(3,1)">300-399</li>
+                            <li onclick="cond(4,1)">400-799</li>
+                            <li onclick="cond(5,1)">800-1099</li>
+                        </ul>
+                    </dd>
+                </div>
+
+                <div class="c_list">
+                    <dt>品牌</dt>
+                    <dd>
+                        <ul class="d_list" id="dlist2">
+                            <li onclick="cond(0,2)">七格格（OTHERML)</li>
+                        </ul>
+                    </dd>
+                </div>
+
+                <div class="c_list">
+                    <dt>颜色</dt>
+                    <dd>
+                        <ul class="d_list" id="dlist3">
+                            <li onclick="cond(0,3)">黑色</li>
+                            <li onclick="cond(1,3)">灰色</li>
+                            <li onclick="cond(2,3)">白色</li>
+                            <li onclick="cond(3,3)">玫瑰红</li>
+                            <li onclick="cond(4,3)">蓝色</li>
+                            <li onclick="cond(5,3)">橙色</li>
+                        </ul>
+                    </dd>
+                </div>
+
+                <div class="c_list">
+                    <dt>类型</dt>
+                    <dd>
+                        <ul class="d_list" id="dlist4">
+                            <li onclick="cond(0,4)">T恤</li>
+                            <li onclick="cond(1,4)">连衣裙</li>
+                        </ul>
+                    </dd>
+                </div>
+            </div>
+
+            <div id="more">
+                <div id="more2">更多选项</div>
+            </div>
+
+            <!--弹出层-->
+            <div id="login">
+                <div class="login1"></div>
+                <div class="login2">            <!--固定在页面中-->
+                    <div class="ltit">
+                        您尚未登录
+                        <a href="javascript:void[0]" class="x">X</a>
+                    </div>
+                    <div class="login3">
+                        <dl>
+                            <dt><img src="img3/name.gif" alt=""></dt>
+                            <dd><input type="text" id="ltext1" class="ltext" placeholder="邮箱、用户名、已验证手机"></dd>
+                        </dl>
+                        <dl>
+                            <dt><img src="img3/pw.gif" alt=""></dt>
+                            <dd><input type="text" id="ltext2" class="ltext" placeholder="密码"></dd>
+                        </dl>
+                        <input type="button" id="lbtn" value="登  录">
+                        <a href="javascript:void[0]">立即注册</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="main5">
+                <div id="m1"><img src="img3/main5.gif" alt=""></div>
+                <ul id="shangpin">
+                    <li>
+                        <a href="商品页.html"><img src="img3/li.gif" alt=""></a>
+                        <div class="collect">
+                            <img src="img3/icon4.ico">
+                            <div class="c_name">收藏</div>
+                        </div>
+                        <div class="attention">
+                            <div class="love"><img src="img3/love.ico" class="limg" alt=""></div><!--空心-->
+                            <div class="a_name">关注</div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img3/li1.gif" alt="">
+                        <div class="collect">
+                            <img src="img3/icon4.ico">
+                            <div class="c_name">收藏</div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img3/li2.gif" alt="">
+                        <div class="collect">
+                            <img src="img3/icon4.ico">
+                            <div class="c_name">收藏</div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img3/li3.gif" alt="">
+                        <div class="collect">
+                            <img src="img3/icon4.ico">
+                            <div class="c_name">收藏</div>
+                        </div>
+                    </li>
+                    <li><img src="img3/li4.gif" alt=""></li>
+                    <li><img src="img3/li5.gif" alt=""></li>
+                    <li><img src="img3/li6.gif" alt=""></li>
+                    <li><img src="img3/li7.gif" alt=""></li>
+                    <li><img src="img3/li.gif" alt=""></li>
+                    <li><img src="img3/li1.gif" alt=""></li>
+                    <li><img src="img3/li2.gif" alt=""></li>
+                    <li><img src="img3/li3.gif" alt=""></li>
+                    <li><img src="img3/li.gif" alt=""></li>
+                    <li><img src="img3/li1.gif" alt=""></li>
+                    <li><img src="img3/li2.gif" alt=""></li>
+                    <li><img src="img3/li3.gif" alt=""></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!--底部-->
+    <div id="footer"><img src="img/footer.gif" alt=""></div>
+</div>
+</body>
+</html>
